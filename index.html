@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mukesh Sehdev | Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #1e1e2f;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .project {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .project a {
+      color: #1e1e2f;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1e1e2f;
+      color: white;
+    }
+    .contact a {
+      display: inline-block;
+      margin: 0.5rem;
+      color: #1e1e2f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 style="font-size: 2.7rem; margin-bottom: 0.5rem;">Mukesh Sehdev</h1>
+    <p>Web Developer | Front-End & Full-Stack</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+	<p>
+		I'm a web developer with a passion for building intuitive, high-performance websites across industries—from construction and remodeling to CRM platforms and mobile apps. I specialize in HTML, CSS, JavaScript, React, and backend integrations. Whether it's keeping it simple with clean, responsive layouts or diving deep into complex full-stack architecture, I adapt to the needs of each project with precision and creativity. My goal is to create digital experiences that are both functional and beautiful.
+	</p>
+
+  </section>
+
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects">
+      <div class="project">
+	  <a href="https://jslconstruction.co" target="_blank" rel="noopener noreferrer">
+		<img src="images/jsl-logo.png" style="max-width: 140px;">
+		</a>
+        <h3>JSL Construction</h3>
+        <p>Website for a Southern California construction company offering tile, roofing, bathroom, kitchen, and painting services.</p>
+        <a href="https://jslconstruction.co" target="_blank">Visit Site</a>
+      </div>
+      <div class="project">
+	  <a href="https://vivifyremodeling.com" target="_blank" rel="noopener noreferrer">
+	  <img src="images/vivify-logo.png" style="max-width: 250px; margin-bottom: 30px">
+	  </a>
+        <h3>Vivify Remodeling</h3>
+        <p>Remodeling company based in Sacramento, CA. Focused on kitchens, bathrooms, ADUs, and window replacements.</p>
+        <a href="https://vivifyremodeling.com/" target="_blank">Visit Site</a>
+      </div>
+      <div class="project">
+	  <a href="https://globalsubscriberbase.com" target="_blank" rel="noopener noreferrer">
+	  <img src="images/gsb-logo.png" style="max-width: 260px; margin-bottom: 25px">
+	  </a>
+        <h3>Global Subscriber Base</h3>
+        <p>CRM platform similar to Salesforce. Built to manage consumer data, marketing analytics, and omni-channel campaigns.</p>
+        <a href="https://globalsubscriberbase.com/" target="_blank">Visit Site</a>
+      </div>
+      <div class="project">
+	  <a href="https://tennispal.com" target="_blank" rel="noopener noreferrer">
+	  <img src="images/tennispal-logo.png" style="max-width: 140px;">
+	  </a>
+        <h3>TennisPAL</h3>
+        <p>App showcase site for finding tennis partners and courts. Available on iOS and Android, built for SageDom LLC.</p>
+        <a href="https://tennispal.com/" target="_blank">Visit Site</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Let’s collaborate or chat about your next project.</p>
+    <div class="contact">
+      <a href="mailto:sehdev.mukesh@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/mukesh-sehdev-61414a142/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/MKS47x" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </section>
+
+<footer>
+  <p>© <span id="year"></span> Mukesh Sehdev</p>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</footer>
+
+
+</body>
+</html>
