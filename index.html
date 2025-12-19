@@ -3,137 +3,265 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mukesh Sehdev | Web Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #1e1e2f;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 1rem;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-    .project {
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .project a {
-      color: #1e1e2f;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #1e1e2f;
-      color: white;
-    }
-    .contact a {
-      display: inline-block;
-      margin: 0.5rem;
-      color: #1e1e2f;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+  <title>Portfolio | Mukesh Sehdev</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div>
+        <h1>Mukesh Sehdev</h1>
+        <p>Web Developer • WordPress & Shopify Specialist • Front-End</p>
+      </div>
 
-  <header>
-    <h1 style="font-size: 2.7rem; margin-bottom: 0.5rem;">Mukesh Sehdev</h1>
-    <p>Web Developer | Front-End & Full-Stack</p>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="theme-icon">🌙</span>
+        <span class="theme-text">Dark mode</span>
+      </button>
+    </div>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-	<p>
-		I'm a web developer with a passion for building intuitive, high-performance websites across industries—from construction and remodeling to CRM platforms and mobile apps. I specialize in HTML, CSS, JavaScript, React, and backend integrations. Whether it's keeping it simple with clean, responsive layouts or diving deep into complex full-stack architecture, I adapt to the needs of each project with precision and creativity. My goal is to create digital experiences that are both functional and beautiful.
-	</p>
+  <main class="container">
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills &amp; Tools</h2>
+      <ul class="skills-list">
+        <li>WordPress</li>
+        <li>Shopify</li>
+        <li>React</li>
+        <li>Figma</li>
+        <li>cPanel</li>
+        <li>JavaScript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </section>
 
-  </section>
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
 
-  <section id="projects">
-    <h2>Featured Projects</h2>
-    <div class="projects">
-      <div class="project">
-	  <a href="https://jslconstruction.co" target="_blank" rel="noopener noreferrer">
-		<img src="images/jsl-logo.png" style="max-width: 140px;">
-		</a>
-        <h3>JSL Construction</h3>
-        <p>Website for a Southern California construction company offering tile, roofing, bathroom, kitchen, and painting services.</p>
-        <a href="https://jslconstruction.co" target="_blank">Visit Site</a>
-      </div>
-      <div class="project">
-	  <a href="https://vivifyremodeling.com" target="_blank" rel="noopener noreferrer">
-	  <img src="images/vivify-logo.png" style="max-width: 250px; margin-bottom: 30px">
-	  </a>
-        <h3>Vivify Remodeling</h3>
-        <p>Remodeling company based in Sacramento, CA. Focused on kitchens, bathrooms, ADUs, and window replacements.</p>
-        <a href="https://vivifyremodeling.com/" target="_blank">Visit Site</a>
-      </div>
-      <div class="project">
-	  <a href="https://globalsubscriberbase.com" target="_blank" rel="noopener noreferrer">
-	  <img src="images/gsb-logo.png" style="max-width: 260px; margin-bottom: 25px">
-	  </a>
-        <h3>Global Subscriber Base</h3>
-        <p>CRM platform similar to Salesforce. Built to manage consumer data, marketing analytics, and omni-channel campaigns.</p>
-        <a href="https://globalsubscriberbase.com/" target="_blank">Visit Site</a>
-      </div>
-      <div class="project">
-	  <a href="https://tennispal.com" target="_blank" rel="noopener noreferrer">
-	  <img src="images/tennispal-logo.png" style="max-width: 140px;">
-	  </a>
-        <h3>TennisPAL</h3>
-        <p>App showcase site for finding tennis partners and courts. Available on iOS and Android, built for SageDom LLC.</p>
-        <a href="https://tennispal.com/" target="_blank">Visit Site</a>
-      </div>
+      <!-- Ugraft Zeus -->
+      <article class="project-card">
+        <div class="project-header">
+          <div class="project-logo">
+            <img src="images/ugraft-logo.png" alt="Ugraft logo" />
+          </div>
+          <div>
+            <h3>
+              <a href="https://ugraft.com" target="_blank" rel="noopener noreferrer">
+                Ugraft Zeus
+              </a>
+            </h3>
+            <p class="project-tag">Shopify · Migration · Conversion-focused</p>
+          </div>
+        </div>
+        <p>
+          Originally built in WordPress and hosted on GoDaddy, I migrated and fully recreated
+          <a href="https://ugraft.com" target="_blank" rel="noopener noreferrer">ugraft.com</a>
+          using Shopify. The new site highlights advanced hair transplant technology with a modern,
+          user‑friendly design optimized for conversions.
+        </p>
+      </article>
+
+      <!-- Gashee Hair Solutions -->
+      <article class="project-card">
+        <div class="project-header">
+          <div class="project-logo">
+            <img src="images/gashee-logo.png" alt="Gashee logo" />
+          </div>
+          <div>
+            <h3>
+              <a href="https://gashee.com" target="_blank" rel="noopener noreferrer">
+                Gashee Hair Solutions
+              </a>
+            </h3>
+            <p class="project-tag">Shopify · E‑commerce · UX</p>
+          </div>
+        </div>
+        <p>
+          Developed <a href="https://gashee.com" target="_blank" rel="noopener noreferrer">gashee.com</a> on Shopify,
+          an e‑commerce platform showcasing dermatologist‑formulated hair regrowth products. Focused on clean design,
+          seamless checkout, and user experience improvements for higher engagement.
+        </p>
+      </article>
+
+      <!-- Traction Alopecia (placed before JSL) -->
+      <article class="project-card">
+        <div class="project-header">
+          <div class="project-logo">
+            <img src="images/traction-logo.png" alt="Traction Alopecia logo" />
+          </div>
+          <div>
+            <h3>
+              <a href="https://tractionalopecia.com/wp" target="_blank" rel="noopener noreferrer">
+                Traction Alopecia
+              </a>
+            </h3>
+            <p class="project-tag">WordPress · Site Recovery · cPanel</p>
+          </div>
+        </div>
+        <p>
+          Resurrected a previously inactive WordPress site using cPanel, restoring functionality so the owners could
+          make updates in the future. This project showcased my ability to troubleshoot hosting environments and recover
+          legacy websites.
+        </p>
+      </article>
+
+      <!-- JSL Construction -->
+      <article class="project-card">
+        <div class="project-header">
+          <div class="project-logo">
+            <img src="images/jsl-logo.png" alt="JSL Construction logo" />
+          </div>
+          <div>
+            <h3>
+              <a href="https://jslconstruction.co" target="_blank" rel="noopener noreferrer">
+                JSL Construction
+              </a>
+            </h3>
+            <p class="project-tag">WordPress · Local Business · SEO</p>
+          </div>
+        </div>
+        <p>
+          Created a WordPress site for a Southern California construction company offering tile, roofing, bathroom,
+          kitchen, and painting services. Implemented responsive layouts and SEO optimization for stronger local search
+          visibility.
+        </p>
+      </article>
+
+      <!-- TennisPAL -->
+      <article class="project-card">
+        <div class="project-header">
+          <div class="project-logo">
+            <img src="images/tennispal-logo.png" alt="TennisPAL logo" />
+          </div>
+          <div>
+            <h3>
+              <a href="https://tennispal.com" target="_blank" rel="noopener noreferrer">
+                TennisPAL
+              </a>
+            </h3>
+            <p class="project-tag">UI/UX · Figma · App Showcase</p>
+          </div>
+        </div>
+        <p>
+          Designed the app showcase site in Figma for
+          <a href="https://tennispal.com" target="_blank" rel="noopener noreferrer">TennisPAL</a>,
+          a platform for finding tennis partners and courts. Collaborated with developers to translate design prototypes
+          into a responsive, production‑ready site.
+        </p>
+      </article>
+
+      <!-- Global Subscriber Base -->
+      <article class="project-card">
+        <div class="project-header">
+          <div class="project-logo">
+            <img src="images/gsb-logo.png" alt="Global Subscriber Base logo" />
+          </div>
+          <div>
+            <h3>Global Subscriber Base</h3>
+            <p class="project-tag">CRM · Data Platform · Integrations</p>
+          </div>
+        </div>
+        <p>
+          Built a CRM platform similar to Salesforce, designed to manage consumer data, marketing analytics, and
+          omni‑channel campaigns. Focused on scalability and secure backend integrations to support complex workflows
+          and data‑driven decision making.
+        </p>
+      </article>
+
+      <!-- Webmaster & Multi-Site Maintenance -->
+      <article class="project-card">
+        <div class="project-header">
+          <div class="project-logo">
+            <img src="images/webmaster.png" alt="Webmaster logo" />
+          </div>
+          <div>
+            <h3>Webmaster &amp; WordPress Maintenance (Multi‑Site Portfolio)</h3>
+            <p class="project-tag">WordPress · Security · Multi‑Site Management</p>
+          </div>
+        </div>
+        <p>
+          Managed and maintained a network of WordPress websites for a single owner. Focused on security, stability,
+          and technical upkeep across multiple live sites rather than redesigning content or visuals.
+        </p>
+
+        <h4>Responsibilities</h4>
+        <ul class="project-list">
+          <li>Updated WordPress core, themes, and plugins regularly</li>
+          <li>Implemented HTTPS and improved overall site security</li>
+          <li>Installed and configured SEO and security plugins</li>
+          <li>Kept footer years dynamic and handled routine content upkeep</li>
+          <li>Monitored site health and resolved minor technical issues</li>
+          <li>
+            Created a dedicated podcast page for Bumpinator.com to professionally showcase the “Baldcast” podcast
+          </li>
+        </ul>
+
+        <h4>Websites Managed</h4>
+        <ul class="project-list">
+          <li><a href="https://bumpinator.com" target="_blank" rel="noopener noreferrer">bumpinator.com</a></li>
+          <li><a href="https://hairrestorationquestions.com" target="_blank" rel="noopener noreferrer">hairrestorationquestions.com</a></li>
+          <li><a href="https://hairpeacefoundation.org" target="_blank" rel="noopener noreferrer">hairpeacefoundation.org</a></li>
+          <li><a href="https://dermhairclinic.com" target="_blank" rel="noopener noreferrer">dermhairclinic.com</a></li>
+          <li><a href="https://ashrs.com" target="_blank" rel="noopener noreferrer">ashrs.com</a></li>
+        </ul>
+
+        <h4>Highlight</h4>
+        <p>
+          <strong>Bumpinator Podcast Page:</strong>
+          Designed and implemented a dedicated page to showcase the “Baldcast” podcast, improving discoverability and
+          professionalism for the show.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mukesh Sehdev. All rights reserved.</p>
     </div>
-  </section>
+  </footer>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Let’s collaborate or chat about your next project.</p>
-    <div class="contact">
-      <a href="mailto:sehdev.mukesh@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/mukesh-sehdev-61414a142/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="https://github.com/MKS47x" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </div>
-  </section>
-
-<footer>
-  <p>© <span id="year"></span> Mukesh Sehdev</p>
   <script>
+    // Dynamic year in footer
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Theme toggle with localStorage
+    const body = document.body;
+    const toggleBtn = document.getElementById("theme-toggle");
+    const iconSpan = toggleBtn.querySelector(".theme-icon");
+    const textSpan = toggleBtn.querySelector(".theme-text");
+
+    function setTheme(mode) {
+      if (mode === "dark") {
+        body.classList.add("dark-mode");
+        iconSpan.textContent = "☀️";
+        textSpan.textContent = "Light mode";
+      } else {
+        body.classList.remove("dark-mode");
+        iconSpan.textContent = "🌙";
+        textSpan.textContent = "Dark mode";
+      }
+      localStorage.setItem("theme", mode);
+    }
+
+    // Load initial theme
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+
+    toggleBtn.addEventListener("click", () => {
+      if (body.classList.contains("dark-mode")) {
+        setTheme("light");
+      } else {
+        setTheme("dark");
+      }
+    });
   </script>
-</footer>
-
-
 </body>
 </html>
